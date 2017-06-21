@@ -104,7 +104,6 @@ class App:
 			log.draw(self.display_surf)
 
 		self.frog.draw(self.display_surf)
-		print(self.frog.x)
 		pygame.display.flip()
 
 	def cleanup(self):
@@ -115,12 +114,15 @@ class App:
 		if self.init() == False:
 			self.running = False
 
+		elapsed = 0.
 		while self.running:
+			seconds = elapsed/1000.0
 			for event in pygame.event.get():
 				self.event( event )
 			self.update()
 			self.draw()
-			self.clock.tick(self.fps)
+			elapsed = self.clock.tick(self.fps)
+			pygame.display.set_caption("FPS - {0}".format(str(elapsed)))
 		self.cleanup()
 
 
