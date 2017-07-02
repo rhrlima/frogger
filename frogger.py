@@ -1,5 +1,13 @@
 #!/usr/bin/python3
 
+"""
+Frogger game made with Python3 and Pygame
+
+Author: Ricardo Henrique Remes de Lima <https://www.github.com/rhrlima>
+
+Source: https://www.youtube.com/user/shiffman
+"""
+
 import random
 
 import pygame
