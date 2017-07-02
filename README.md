@@ -4,7 +4,7 @@ Frogger is a simple video game created in 1981 in partnership between SEGA and K
 
 The goal is to move the frog up to the safety zone, avoiding the cars and jumping over the logs.
 
-This code was created followind the videos from the [Coding Train](https://www.youtube.com/user/shiffman) channel.
+This code was created following the videos from the [Coding Train](https://www.youtube.com/user/shiffman) channel.
 
 ## Getting Started
 
